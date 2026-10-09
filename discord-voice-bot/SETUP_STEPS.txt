@@ -1,0 +1,129 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║        🔥 GUDIYA BOT — SETUP STEPS                         ║
+# ║        Ye steps follow kar, 10 min mein sab ho jayega       ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# STEP 1: Discord Bot Token (~2 min)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# 1. Ye link khol: https://discord.com/developers/applications
+# 2. "New Application" click kar → Naam rakh "Gudiya"
+# 3. Left side mein "Bot" tab click kar
+# 4. "Reset Token" click kar → Token COPY kar (ye DISCORD_BOT_TOKEN hai)
+# 5. Neeche scroll kar → "Privileged Gateway Intents" mein:
+#       ✅ MESSAGE CONTENT INTENT — ON karo
+# 6. Left side mein "OAuth2" → "URL Generator" click kar
+#       Scopes mein tick karo: bot
+#       Bot Permissions mein tick karo: Send Messages, Connect, Speak, Use Voice Activity
+# 7. Neeche Generated URL copy kar → browser mein paste kar
+# 8. Apna server select kar → Authorize kar
+#
+# 🎯 Result: Bot tera server mein aa jayega (offline dikhega abhi)
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# STEP 2: Gemini API Key (~30 sec)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# 1. Ye link khol: https://aistudio.google.com/apikey
+# 2. Google account se login kar
+# 3. "Create API Key" click kar
+# 4. Key COPY kar (ye GEMINI_API_KEY hai)
+#
+# 🎯 Result: Gemini API key mil jayegi (FREE hai)
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# STEP 3: Deepgram API Key (~1 min)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# 1. Ye link khol: https://console.deepgram.com/
+# 2. Signup kar (Google/GitHub se bhi ho jayega)
+# 3. Dashboard pe aake left mein "API Keys" click kar
+# 4. "Create a New API Key" click kar
+#       Key Name: gudiya-bot
+#       Permissions: Member (ya Admin)
+# 5. Key COPY kar (ye DEEPGRAM_API_KEY hai)
+#
+# 🎯 Result: $200 free credit milta hai — bahut hai
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# STEP 4: ElevenLabs API Key + Voice ID (~2 min)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# API Key:
+# 1. Ye link khol: https://elevenlabs.io/
+# 2. Signup kar
+# 3. Profile icon (top right) click kar → "API Keys"
+# 4. "Create API Key" → Key COPY kar (ye ELEVENLABS_API_KEY hai)
+#
+# Voice ID:
+# 1. Ye link khol: https://elevenlabs.io/voice-library
+# 2. Search kar "Hindi" ya "Indian" ya koi bhi girl voice pasand aaye
+# 3. Voice pe click kar → URL mein se Voice ID copy kar
+#    URL aisi dikhegi: https://elevenlabs.io/voice-lab/xxxxxxxxxxxx
+#    "xxxxxxxxxxxx" wala part VOICE ID hai
+#
+#    Ya ye popular girl voices try kar:
+#    - "Rachel" (calm, clear)  → Voice ID: 21m00Tcm4TlvDq8ikWAM
+#    - "Bella" (soft, young)   → Voice ID: EXAVITQu4vr4xnSDxMaL
+#    - "Elli" (young, cute)    → Voice ID: MF3mGyEYCl7XYWbV9V6O
+#
+# 🎯 Result: API key + ek girl voice ka ID mil jayega
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# STEP 5: .env File Banao (~1 min)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# Is folder mein ek file banao ".env" naam ki (bina quotes ke)
+# Usme ye paste karo aur apni keys daal do:
+#
+# DISCORD_BOT_TOKEN=yahan_discord_token_paste_karo
+# GEMINI_API_KEY=yahan_gemini_key_paste_karo
+# DEEPGRAM_API_KEY=yahan_deepgram_key_paste_karo
+# ELEVENLABS_API_KEY=yahan_elevenlabs_key_paste_karo
+# ELEVENLABS_VOICE_ID=yahan_voice_id_paste_karo
+#
+# ⚠️ IMPORTANT: Keys ke aage-peeche space ya quotes MAT dalna!
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# STEP 6: Bot Start Karo 🚀
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# Terminal / PowerShell khol, is folder mein aa aur ye command run kar:
+#
+#   python bot.py
+#
+# Agar sab sahi hai toh ye dikhega:
+#   ✅ Bot is ready! Logged in as Gudiya#1234
+#
+# Ab Discord mein jaa aur:
+#   1. Kisi voice channel mein join ho
+#   2. Chat mein type kar: !join
+#   3. Phir type kar: !listen
+#   4. Ab bol — Gudiya sunegi aur daantegi 🔥💅
+#
+# Band karna ho toh: !stop aur phir !leave
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# COMMANDS CHEAT SHEET
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+#   !join   → Bot ko voice channel mein bulao
+#   !leave  → Bot ko nikaalo
+#   !listen → Bot sunna shuru karegi
+#   !stop   → Bot sunna band karegi
+#   !reset  → Conversation history clear karo
+#
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  Koi problem aaye toh Antigravity mein pooch lena 😎        ║
+# ╚══════════════════════════════════════════════════════════════╝
